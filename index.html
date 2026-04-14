@@ -6,67 +6,86 @@
     <title>Central de Atendimento Nio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #0a0e27;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f2a;
             color: white;
+            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
+            min-height: 100vh;
         }
         .container {
-            text-align: center;
-            width: 90%;
+            padding: 40px 20px;
+            width: 100%;
             max-width: 400px;
         }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
         .card {
-            background-color: #161b3d;
+            background: #161b3d;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3 );
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        .card h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+        .card p {
+            margin: 0 0 15px 0;
+            font-size: 14px;
+            color: #bbb;
         }
         .btn {
             display: block;
-            background-color: #25d366;
+            background: #25d366;
             color: white;
             text-decoration: none;
             padding: 12px;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
-            margin-top: 10px;
+            transition: background 0.3s;
         }
-        h1 { font-size: 24px; margin-bottom: 5px; }
-        p { font-size: 14px; color: #ccc; }
-        h2 { font-size: 18px; margin-bottom: 5px; }
+        .btn:hover {
+            background: #1eb954;
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>SUPORTE AO CLIENTE</h1>
-        <p>Escolha uma opção de atendimento</p>
+        <div class="logo">SUPORTE AO CLIENTE</div>
+        <div class="subtitle">Escolha uma opção de atendimento</div>
 
         <div class="card">
-            <h2>Atendimento</h2>
+            <h3>Atendimento</h3>
             <p>Fale com um atendente agora</p>
-            <a href="https://wa.me/5598992425168" class="btn">Abrir WhatsApp</a>
+            <a class="btn" href="https://wa.me/5598992425168">Abrir WhatsApp</a>
         </div>
 
         <div class="card">
-            <h2>Suporte Técnico</h2>
+            <h3>Suporte Técnico</h3>
             <p>Internet lenta ou sem conexão</p>
-            <a href="https://wa.me/5598992425168" class="btn">Solicitar Suporte</a>
+            <a class="btn" href="https://wa.me/5598992425168">Solicitar Suporte</a>
         </div>
 
         <div class="card">
-            <h2>Emitir</h2>
+            <h3>Emitir</h3>
             <p>Atualização</p>
-            <a href="https://wa.me/5598992425168" class="btn">Falar com Atendente</a>
+            <a class="btn" href="https://wa.me/5598992425168">Falar com Atendente</a>
         </div>
     </div>
-
 </body>
 </html>
